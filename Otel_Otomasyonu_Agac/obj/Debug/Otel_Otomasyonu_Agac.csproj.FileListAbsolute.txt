@@ -1,0 +1,32 @@
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csprojAssemblyReference.cache
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Properties.Resources.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csproj.GenerateResource.cache
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csproj.CoreCompileInputs.cache
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\bin\Debug\Otel_Otomasyonu_Agac.exe.config
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\bin\Debug\Otel_Otomasyonu_Agac.exe
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\bin\Debug\Otel_Otomasyonu_Agac.pdb
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Giris.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.exe
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.pdb
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.IslemlerForm.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.PersonelIslem.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.OtelIslemForm.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.MusteriAnaForm.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Ekran.PuanForm.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Ekran.YorumForm.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\bin\Debug\Otel_Otomasyonu_Agac.exe.config
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\bin\Debug\Otel_Otomasyonu_Agac.exe
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\bin\Debug\Otel_Otomasyonu_Agac.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Giris.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.IslemlerForm.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.MusteriAnaForm.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.OtelIslemForm.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.PersonelIslem.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Ekran.PuanForm.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Ekran.YorumForm.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.exe
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.pdb
