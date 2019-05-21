@@ -30,3 +30,5 @@ C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj
 C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.exe
 C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Ekran.PersonelForm.resources
+D:\Toplu\uygulamalar\Projeler\Otel_Otomasyonu_Agac\Otel_Otomasyonu_Agac\obj\Debug\Otel_Otomasyonu_Agac.Ekran.PersonelForm.resources

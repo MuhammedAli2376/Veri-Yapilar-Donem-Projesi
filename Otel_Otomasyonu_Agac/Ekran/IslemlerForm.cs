@@ -130,25 +130,16 @@ namespace Otel_Otomasyonu_Agac
         }
         private void toolStripComboBox1_Click(object sender, EventArgs e)
         {
+            toolStripComboBox1.ComboBox.ValueMember = "id";
             DepartmanORM dorm = new DepartmanORM();
             dataGridView1.DataSource = dorm.Listele(Convert.ToInt32(toolStripComboBox1.ComboBox.SelectedValue));
-            toolStripComboBox1.ComboBox.ValueMember = "id";
-           
         }
         private void puanVerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             PersonelORM porm = new PersonelORM();
             Personel per = new Personel();
             int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id"].Value);
-            int sayac = 0;
-            PropertyInfo[] proplar = typeof(Personel).GetProperties();
-            foreach (PropertyInfo item in proplar)
-            {
-                if (item.PropertyType.Name == "String")
-                    item.SetValue(per, dataGridView1.CurrentRow.Cells[sayac++].Value.ToString());
-                else
-                    item.SetValue(per, Convert.ToInt32(dataGridView1.CurrentRow.Cells[sayac++].Value.ToString()));
-            }
+            Araclar.PropertyDoldur<Personel>(per, dataGridView1);
             string ad = dataGridView1.CurrentRow.Cells["Adi"].Value.ToString();
             try
             { per.Puan = Convert.ToInt32(Interaction.InputBox(string.Format("{0} Personeline Puan Ver", ad))); }

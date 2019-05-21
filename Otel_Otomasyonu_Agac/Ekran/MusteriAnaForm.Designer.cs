@@ -34,6 +34,7 @@
             this.puanVerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yorumYapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yorumlaırıGosterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textil = new System.Windows.Forms.TextBox();
             this.textilce = new System.Windows.Forms.TextBox();
             this.lblil = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.Ara = new System.Windows.Forms.Button();
             this.radioyildiz = new System.Windows.Forms.RadioButton();
             this.radiopuan = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,9 +66,10 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.puanVerToolStripMenuItem,
             this.yorumYapToolStripMenuItem,
-            this.yorumlaırıGosterToolStripMenuItem});
+            this.yorumlaırıGosterToolStripMenuItem,
+            this.personelGösterToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(236, 100);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(236, 132);
             // 
             // puanVerToolStripMenuItem
             // 
@@ -88,6 +91,13 @@
             this.yorumlaırıGosterToolStripMenuItem.Size = new System.Drawing.Size(235, 32);
             this.yorumlaırıGosterToolStripMenuItem.Text = "Yorumlaırı Goster";
             this.yorumlaırıGosterToolStripMenuItem.Click += new System.EventHandler(this.yorumlaırıGosterToolStripMenuItem_Click);
+            // 
+            // personelGösterToolStripMenuItem
+            // 
+            this.personelGösterToolStripMenuItem.Name = "personelGösterToolStripMenuItem";
+            this.personelGösterToolStripMenuItem.Size = new System.Drawing.Size(235, 32);
+            this.personelGösterToolStripMenuItem.Text = "Personel Göster";
+            this.personelGösterToolStripMenuItem.Click += new System.EventHandler(this.personelGösterToolStripMenuItem_Click);
             // 
             // textil
             // 
@@ -128,7 +138,7 @@
             // Ara
             // 
             this.Ara.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ara.Location = new System.Drawing.Point(618, 206);
+            this.Ara.Location = new System.Drawing.Point(618, 216);
             this.Ara.Name = "Ara";
             this.Ara.Size = new System.Drawing.Size(199, 49);
             this.Ara.TabIndex = 6;
@@ -162,12 +172,26 @@
             this.radiopuan.Text = "Puan\'a Göre";
             this.radiopuan.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(12, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 45);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Yenile";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MusteriAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(865, 701);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.radiopuan);
             this.Controls.Add(this.radioyildiz);
             this.Controls.Add(this.Ara);
@@ -202,5 +226,7 @@
         private System.Windows.Forms.Button Ara;
         private System.Windows.Forms.RadioButton radioyildiz;
         private System.Windows.Forms.RadioButton radiopuan;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem personelGösterToolStripMenuItem;
     }
 }

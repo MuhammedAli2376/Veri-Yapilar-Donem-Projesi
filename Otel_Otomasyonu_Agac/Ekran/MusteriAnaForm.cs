@@ -21,17 +21,19 @@ namespace Otel_Otomasyonu_Agac
         {
             InitializeComponent();
         }
+        Otel otel;
         private void MusteriAnaForm_Load(object sender, EventArgs e)
         {
-            Otel otel = new Otel();
+            otel = new Otel();
             OtelORM orm = new OtelORM();
             PropertyInfo[] proplar = typeof(Otel).GetProperties();
             foreach (PropertyInfo item in proplar)
             {
-               OtellerAgac.table.Columns.Add(item.Name);
+                OtellerAgac.Oteltable.Columns.Add(item.Name);
             }
-            Aktar.OtelAktar(orm.Listele(), otel);
-            dataGridView1.DataSource = OtellerAgac.table;
+            Aktar aktar = new Aktar();
+            aktar.OtelAktar(orm.Listele(), otel);
+            dataGridView1.DataSource = OtellerAgac.Oteltable;
             OtelGetir();
         }
         private void puanVerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,14 +42,7 @@ namespace Otel_Otomasyonu_Agac
             OtelORM orm = new OtelORM();
             frm.ShowDialog();
             Otel otel = new Otel();
-            PropertyInfo[] proplar = typeof(Otel).GetProperties();
-            foreach (PropertyInfo item in proplar)
-            {
-                if(item.PropertyType.Name=="String")
-                    item.SetValue(otel, dataGridView1.CurrentRow.Cells[item.Name].Value.ToString());
-                else
-                    item.SetValue(otel, Convert.ToInt32(dataGridView1.CurrentRow.Cells[item.Name].Value.ToString()));
-            }
+            Araclar.PropertyDoldur<Otel>(otel, dataGridView1);
             otel.OtelPuani = Convert.ToInt32(frm.button1.Tag);
             if (orm.Guncelle(otel, Convert.ToInt32(dataGridView1.CurrentRow.Cells["id"].Value.ToString())))
               dataGridView1.DataSource= orm.Listele();
@@ -62,72 +57,42 @@ namespace Otel_Otomasyonu_Agac
             y.Musterid = Araclar.AktifMusteri;
             YorumORM orm = new YorumORM();
             if (orm.Ekle(otelid, id, yorum))
+            {
                 MessageBox.Show("Başarılı");
+                OtelORM orm1 = new OtelORM();
+                dataGridView1.DataSource = orm1.Listele();
+            }
+                
         }
         private void yorumlaırıGosterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             YorumForm frm = new YorumForm();
-            frm.label1.Tag = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id"].Value);
+            frm.data1.Tag = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id"].Value);
+            frm.label1.Tag = otel;
             frm.ShowDialog();
         }
-        HashMapChain asd = new HashMapChain();
+        HashMapChain asd;
         void OtelGetir()
         {
-            DataTable table = OtellerAgac.table;
-            table = OtellerAgac.table;
+            asd = new HashMapChain();
+            DataTable table = OtellerAgac.Oteltable;
             Otel[] oteller = new Otel[table.Rows.Count];
-            PropertyInfo[] proplar = typeof(Otel).GetProperties();
+           
             for (int i = 0; i < table.Rows.Count; i++)
             {
-                int sayac = 0;
-                Otel otel = new Otel();
-                foreach (PropertyInfo item in proplar)
-                {
-                    if (item.PropertyType.Name == "String")
-                        item.SetValue(otel, table.Rows[i][sayac++].ToString());
-                    else
-                        item.SetValue(otel, Convert.ToInt32(table.Rows[i][sayac++].ToString()));
-                }
+                Otel otel = new Otel();  
+                Araclar.PropertyDoldur<Otel>(otel, table,i);
                 oteller[i] = otel;
-            }
-
-            for (int h = 0; h < oteller.Length; h++)
-            {
-                asd.OtelEkle(oteller[h].Il, oteller[h].Ilce, oteller[h]);
+                asd.OtelEkle(oteller[i].Il, oteller[i].Ilce, oteller[i]);
             }
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            DataTable dt = new DataTable();
-            Otel[] otel = asd.il_ve_ilceye_gore(textil.Text, textilce.Text);
-            if (otel==null)
-            {
-                MessageBox.Show("Kayıt bulunamdı");
-                return;
-            }
-            PropertyInfo[] proplar = typeof(Otel).GetProperties();
-            DataRow row;
-            for (int i = 0; i < otel.Length; i++)
-            {
-                row = dt.NewRow();
-                foreach (PropertyInfo p in proplar)
-                {
-                    if (i == 0)
-                        dt.Columns.Add(p.Name);
-                    row[p.Name] = p.GetValue(otel[i]);
-                }
-                dt.Rows.Add(row);
-            }
-            dataGridView1.DataSource = dt;
-            textil.Text = String.Empty;
-            textilce.Text = String.Empty;
-
-        }
-        int Param=0;
         private void BTNİleGore_Click(object sender, EventArgs e)
         {
-            Param = 1;
-            if (textilce.Text != ""&&!radiopuan.Checked&&!radioyildiz.Checked)
+           
+            int Param = 0;
+            if (textilce.Text == ""&&!radiopuan.Checked&&!radioyildiz.Checked)
+                Param = 1;
+          else  if (textilce.Text != "" && !radiopuan.Checked && !radioyildiz.Checked)
                 Param = 2;
             else if (radiopuan.Checked && textilce.Text == "")
                 Param = 3;
@@ -160,6 +125,33 @@ namespace Otel_Otomasyonu_Agac
             dataGridView1.DataSource = dt;
             textil.Text = String.Empty;
             textilce.Text = String.Empty;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            otel = new Otel();
+            OtelORM orm = new OtelORM();
+            PropertyInfo[] proplar = typeof(Otel).GetProperties();
+            OtellerAgac.Oteltable.Columns.Clear();
+            OtellerAgac.Oteltable.Rows.Clear();
+            foreach (PropertyInfo item in proplar)
+            {
+                OtellerAgac.Oteltable.Columns.Add(item.Name);
+            }
+            Aktar aktar = new Aktar();
+            aktar.OtelAktar(orm.Listele(), otel);
+            dataGridView1.DataSource = OtellerAgac.Oteltable;
+            OtelGetir();
+            radiopuan.Checked = false;
+            radioyildiz.Checked = false;
+        }
+
+        private void personelGösterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PersonelForm frm = new PersonelForm();
+            frm.label1.Tag = otel;
+            frm.data1.Tag = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id"].Value.ToString());
+            frm.ShowDialog();
         }
     }
 }

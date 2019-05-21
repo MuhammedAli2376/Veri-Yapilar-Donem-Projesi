@@ -52,7 +52,7 @@ namespace HashUygulama
                 return Sifre;
              }
         
-        public Otel[] il_ve_ilceye_gore(string il,string ilce)
+        private Otel[] il_ve_ilceye_gore(string il,string ilce)
         {
             int hash1 = SifreOlustur(il)%Iller;
             int hash2 = (SifreOlustur(ilce)+hash1)%Ilceler;
@@ -73,7 +73,7 @@ namespace HashUygulama
                 return otel;
             }
         }
-        public Otel[] ile_gore(string il)
+        private Otel[] ile_gore(string il)
         {
             Otel[] otel = new Otel[0];
             int hash1 = SifreOlustur(il) % Iller;
@@ -99,7 +99,6 @@ namespace HashUygulama
                 return null;
             else
                 return otel;
-            
         }
         private Otel [] Yildizsırala(Otel[] otel)
         {
@@ -118,7 +117,7 @@ namespace HashUygulama
             }
             return otel;
         }
-        private Otel[] sırala(Otel[] otel)
+        private Otel[] Puansırala(Otel[] otel)
         {
             int i, j;
             Otel moved;
@@ -144,9 +143,9 @@ namespace HashUygulama
                 case 2:
                     return il_ve_ilceye_gore(il, ilce); 
                 case 3:
-                    return sırala(ile_gore(il));
+                    return Puansırala(ile_gore(il));
                 case 4:
-                    return sırala(il_ve_ilceye_gore(il, ilce));
+                    return Puansırala(il_ve_ilceye_gore(il, ilce));
                 case 5:
                     return Yildizsırala(ile_gore(il));
                 case 6:

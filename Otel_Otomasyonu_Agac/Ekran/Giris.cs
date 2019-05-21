@@ -19,7 +19,6 @@ namespace Otel_Otomasyonu_Agac
         {
             InitializeComponent();
         }
-        //deneeeee
         private void button2_Click(object sender, EventArgs e)
         {
             Musteri musteri = new Musteri();

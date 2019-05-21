@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Otel_Otomasyonu_Agac.Otel">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAgAgBAAAAAAIAABAAAgABQAAgAAAAAAJAgA=</HashCode>
+      <FileName>Entity\Otel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Departman" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Entity\Departman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Musteri" Collapsed="true">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAgA=</HashCode>
+      <FileName>Entity\Musteri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.OdaTip" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAgA=</HashCode>
+      <FileName>Entity\OdaTip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Personel" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAEAAAIAAAABAAAAAAAgAAAAACAAAAAoBIgA=</HashCode>
+      <FileName>Entity\Personel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Pozisyon" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Entity\Pozisyon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Entity.Puan" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAE=</HashCode>
+      <FileName>Entity\Puan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Yorum" Collapsed="true">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAA=</HashCode>
+      <FileName>Entity\Yorum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Ana&lt;T&gt;" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAIAAAAABIAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\Ana.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.DepartmanORM" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\DepartmanORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.MusteriORM" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\MusteriORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.OdaTipORM" Collapsed="true">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\OdaTipORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.OtelORM" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\OtelORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.PersonelORM" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\PersonelORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.PozisyonORM" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\PozisyonORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.PuanORM" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\PuanORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.ORM.YorumORM" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ORM\YorumORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.OtellerAgac">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAgAKQQAAAAAAAAAAAAAAACAIAAAAIACAgAAAAA=</HashCode>
+      <FileName>Agac\OtellerAgac.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.BagliListe.BagliListe" Collapsed="true">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>BagliListe\BagliListe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.BagliListe.Personeller" Collapsed="true">
+    <Position X="11.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BagliListe\Personeller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.BagliListe.Yorumlar" Collapsed="true">
+    <Position X="9.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BagliListe\Yorumlar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HashUygulama.HashMapChain" Collapsed="true">
+    <Position X="12.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAQAAAIBAAAAAAAAAAEACIAAAAAAQQAAAAAA=</HashCode>
+      <FileName>HashTable\HashMapChain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HashUygulama.LinkedHashEntry" Collapsed="true">
+    <Position X="12.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAgAAAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>HashTable\LinkedHashEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Aktar">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAABAAAAAAAAAIAAAAAAABAAAAAAAAAAIAAQgA=</HashCode>
+      <FileName>Aktar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.Araclar">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAQAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Araclar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Otel_Otomasyonu_Agac.OtelAgacDugum">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>OtelAgacDugum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Otel_Otomasyonu_Agac.Iislemler&lt;T&gt;" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAIAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BagliListe\Iislemler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

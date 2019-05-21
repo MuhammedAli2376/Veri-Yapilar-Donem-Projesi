@@ -51,6 +51,12 @@
     <Compile Include="BagliListe\BagliListe.cs" />
     <Compile Include="BagliListe\Personeller.cs" />
     <Compile Include="BagliListe\Yorumlar.cs" />
+    <Compile Include="Ekran\PersonelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekran\PersonelForm.Designer.cs">
+      <DependentUpon>PersonelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ekran\PuanForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <EmbeddedResource Include="Ekran\OtelIslemForm.resx">
       <DependentUpon>OtelIslemForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ekran\PersonelForm.resx">
+      <DependentUpon>PersonelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ekran\PersonelIslem.resx">
       <DependentUpon>PersonelIslem.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +156,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

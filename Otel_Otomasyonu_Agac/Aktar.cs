@@ -10,99 +10,64 @@ using System.Threading.Tasks;
 
 namespace Otel_Otomasyonu_Agac
 {
-  public static class Aktar
+  public  class Aktar
     {
-      public static void OtelAktar(DataTable dt,Otel kok)
+      public void OtelAktar(DataTable dt,Otel kok)
         {
-            
+            OtellerAgac ana = new OtellerAgac();
             PersonelAktar();
             YorumAktar();
-            int sayac = 0;
             int sutun = dt.Rows.Count;
-            OtellerAgac ana = new OtellerAgac();
-            PropertyInfo[] pr = typeof(Otel).GetProperties();
             for (int i = 0; i < sutun; i++)
             {
                 Personeller personeller = new Personeller();
                 Yorumlar yorumlar = new Yorumlar();
                 Otel dal = new Otel();
-                foreach (PropertyInfo item in pr)
-                {
-                    if (i == 0)
-                    {
-                        if (item.PropertyType.Name == "String")
-                        {
-                            item.SetValue(kok, dt.Rows[i][sayac++].ToString());
-                        }
-                        else
-                            item.SetValue(kok, Convert.ToInt32(dt.Rows[i][sayac++].ToString()));
-                    }
-                    else
-                    {
-                        if (item.PropertyType.Name == "String")
-                            item.SetValue(dal, dt.Rows[i][sayac++].ToString());
-                        else
-                            item.SetValue(dal, Convert.ToInt32(dt.Rows[i][sayac++].ToString()));
-                    }
-                }
                 if (i == 0)
                 {
+                    Araclar.PropertyDoldur<Otel>(kok, dt, i);
                     for (int k = 0; k < Pdizi.Length; k++)
-                    {
                         if (kok.id == Pdizi[k].Otelid)
                             kok.personeller = personeller.InsertFirst(Pdizi[k]);
-                    }
                     for(int h = 0; h < ydizi.Length; h++)
-                    {
                         if (kok.id == ydizi[h].Otelid)
                             kok.Yorumlar = yorumlar.InsertFirst(ydizi[h]);
-                    }
                 }
                 else
                 {
+                    Araclar.PropertyDoldur<Otel>(dal, dt, i);
                     for (int k = 0; k < Pdizi.Length; k++)
-                    {
                         if (dal.id == Pdizi[k].Otelid)
                             dal.personeller = personeller.InsertFirst(Pdizi[k]);
-                    }
                     for (int h = 0; h < ydizi.Length; h++)
-                    {
                         if (dal.id == ydizi[h].Otelid)
                             dal.Yorumlar = yorumlar.InsertFirst(ydizi[h]);
-                    }
-                    ana.Ekle<Otel>(kok, dal, Convert.ToInt32(dt.Rows[i]["YildizSayisi"].ToString()));
+                    ana.Ekle(kok, dal);
                 }
-                sayac = 0;
             }
-            ana.InOrderInt(kok);
+            ana.OtelGetir(kok);
         }
-        public static Personel[] Pdizi = new Personel[0];
-        private static void PersonelAktar()
+        private  Personel[] Pdizi;
+        private  void PersonelAktar()
         {
+            Pdizi = new Personel[0];
             DataTable pt = new DataTable();
             PersonelORM porm = new PersonelORM();
             pt = porm.Listele();
-            int sayac = 0;
             int satır = pt.Rows.Count;
-            PropertyInfo[] pr = typeof(Personel).GetProperties();
+            
             for (int i = 0; i < satır; i++)
             {
                 Personel personel = new Personel();
-                foreach (PropertyInfo item in pr)
-                {
-                    if (item.PropertyType.Name == "String")
-                        item.SetValue(personel, pt.Rows[i][sayac++].ToString());
-                    else
-                        item.SetValue(personel, Convert.ToInt32(pt.Rows[i][sayac++].ToString()));
-                }
+                Araclar.PropertyDoldur<Personel>(personel, pt, i);
                 Array.Resize(ref Pdizi, Pdizi.Length + 1);
                 Pdizi[i] = personel;
-                sayac = 0;
             }
         }
-        public static Yorum[] ydizi = new Yorum[0];
-        private static void YorumAktar()
+        private  Yorum[] ydizi;
+        private  void YorumAktar()
         {
+            ydizi = new Yorum[0];
             MusteriAktar();
             DataTable dy = new DataTable();
             YorumORM yorm = new YorumORM();
@@ -126,28 +91,20 @@ namespace Otel_Otomasyonu_Agac
                 
             }
         }
-        public static Musteri[] mdizi = new Musteri[0];
-        private static void MusteriAktar()
+       private  Musteri[] mdizi;
+        private  void MusteriAktar()
         {
+            mdizi = new Musteri[0]; 
             DataTable dm = new DataTable();
             MusteriORM morm = new MusteriORM();
             dm = morm.Listele();
-            int sayac = 0;
             int satır = dm.Rows.Count;
-            PropertyInfo[] pr = typeof(Musteri).GetProperties();
             for (int i = 0; i < satır; i++)
             {
                 Musteri musteri = new Musteri();
-                foreach (PropertyInfo item in pr)
-                {
-                    if (item.PropertyType.Name == "String")
-                        item.SetValue(musteri, dm.Rows[i][sayac++].ToString());
-                    else
-                        item.SetValue(musteri, Convert.ToInt32(dm.Rows[i][sayac++].ToString()));
-                }
+                Araclar.PropertyDoldur<Musteri>(musteri, dm, i);
                 Array.Resize(ref mdizi, mdizi.Length + 1);
                 mdizi[i] = musteri;
-                sayac = 0;
             }
         }
     }

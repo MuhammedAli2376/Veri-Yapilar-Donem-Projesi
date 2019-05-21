@@ -1,9 +1,7 @@
-﻿using Otel_Otomasyonu_Agac.ORM;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Otel_Otomasyonu_Agac.Ekran
 {
-    public partial class YorumForm : Form
+    public partial class PersonelForm : Form
     {
-        public YorumForm()
+        public PersonelForm()
         {
             InitializeComponent();
         }
-        private void YorumForm_Load(object sender, EventArgs e)
-        { 
+        private void PersonelForm_Load(object sender, EventArgs e)
+        {
             Otel otel = (Otel)label1.Tag;
             OtellerAgac agac = new OtellerAgac();
-            OtellerAgac.YorumTable.Rows.Clear();
-            agac.YorumGetir(otel, (int)data1.Tag);
-            data1.DataSource = OtellerAgac.YorumTable;
+            OtellerAgac.PersonelTable.Rows.Clear();
+            agac.PersonelGetir(otel, (int)data1.Tag);
+            data1.DataSource = OtellerAgac.PersonelTable;
         }
     }
 }
